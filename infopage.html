@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Button Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .invisible-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        /* Optional: Highlight on hover for testing
+        .invisible-button:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        */
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Page 1</h1>
+    <p>This is your homepage.</p>
+
+    <!-- Invisible Button -->
+    <form action="homepage.html">
+        <button class="invisible-button" type="submit"></button>
+    </form>
+
+</body>
+</html>
